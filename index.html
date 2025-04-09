@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jotaceiiiiiiiiiiii</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="content">
         <header class="cabecalho">
-            <img src="images/mibrg.png" alt="logo">
-            <h1>Catálogo dos mais mais hihi</h1>
+            <img class="logo" src="images/mibrg.png" alt="logo">
         </header>
 
-        <main>
-            <div class="produto">
-                <img src="" alt="">
-                <h3>Nome do produto</h3>
-                <p class="preco">R$499,99</p>
-                <p><a href="#">Detalhes</a></p>
-                <p><a href="#">Link</a></p>
+        <aside>
+
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Camisas</a></li>
+                <li><a href="#">Calças</a></li>
+                <li><a href="#">Tenis</a></li>
+                <li><a href="#">Bonés</a></li>
+                <li><a href="#">Cintos</a></li>
+                <li><a href="#">Outros</a></li>
+            </ul>
+
+            <h3><a href="favs.htm">Favoritos</a></h3>
+            <h3><a href="sobre.html">Sobre Mim</a></h3>
+            <h3><a href="index.html">Home</a></h3>
+
+            <div class="botoes">
+                <button id="adicionar">Adicionar</button>
+                <button id="remover">Remover</button>
             </div>
+
+        </aside>
+
+        <main>
+
         </main>
 
-        <aside>
-            <div class="menulateral">
-                <h2>Categorias</h2>
-                <ul>
-                    <li>Camisas</li>
-                    <li>Calças</li>
-                    <li>Tenis</li>
-                    <li>Bonés</li>
-                    <li>Cintos</li>
-                    <li>Outros</li>
-                </ul>
-                <h2><a href="favs.htm">Favoritos</a></h2>
-                <h2><a href="sobre.html">Sobre Mim</a></h2>
-                <h2><a href="index.html">Home</a></h2>
-            </div>
-            <div class="botoes">
-                <button class="adicionar">Adicionar</button>
-                <button class="remover">Remover</button>
-            </div>
-        </aside>
+        <div id="container-add">
+            <h1>Cadastro de Produto</h1>
+            <!-- Nome do Produto -->
+            <label for="name">Nome do produto</label><br>
+            <input type="text" id="name" name="name" required><br>
+        
+            <!-- Tamanho do Produto -->
+            <label for="tamanho">Tamanho</label><br>
+            <input type="text" id="tamanho" name="tamanho" required><br>
+        
+            <!-- Categorias (Escolha de Produto) -->
+            <label for="Categorias">Categorias</label><br>
+            <label>
+                <input type="radio" id="camisas" name="produto" value="camisas" required> Camisas
+            </label>
+            <label>
+                <input type="radio" id="calcas" name="produto" value="calcas"> Calças
+            </label>
+            <label>
+                <input type="radio" id="tenis" name="produto" value="tenis"> Tênis
+            </label>
+            <label>
+                <input type="radio" id="bones" name="produto" value="bones"> Bonés
+            </label>
+            <label>
+                <input type="radio" id="cintos" name="produto" value="cintos"> Cintos
+            </label>
+            <label>
+                <input type="radio" id="outros" name="produto" value="outros"> Outros
+            </label><br><br>
+        
+            <!-- Preço -->
+            <label for="preco">Preço</label><br>
+            <input type="number" id="preco" name="preco" step="0.01" min="0" required><br>
+        
+            <!-- Link -->
+            <label for="link">Link</label><br>
+            <input type="url" id="link" name="link" required><br>
+        </div>
+        
+
+
+
+
     </div>
+
 </body>
+
+<script src="script.js"></script>
+
 </html>

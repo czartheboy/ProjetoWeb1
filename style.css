@@ -1,5 +1,142 @@
 body {
     background-color: #eee24a;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #02da6c;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ---------- - Cabecalho - ----------- */
+
+header {
+    height: 120px;
+}
+
+.logo {
+    height: 120px;
+}
+
+
+/* ---------- - Barra lateral - ----------- */
+
+aside {
+    background-color: #54ab29;
+    color: #eee24a;
+    padding: 10px 0 0 20px;
+    border-radius: 3rem;
+    height: 34rem;
+    width: 17%;
+    float: right;
+    margin: 10px 20px 0 0;
+    box-shadow: 0 0 10px rgb(2, 59, 2);
+}
+
+aside > h2, h3 {
+    text-align: center;
+    margin-right: 30px;
+}
+
+aside > ul li {
+    text-align: center;
+    margin-left: 25px;
+}
+
+ul li a {
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee24a;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: rgb(115, 115, 3);
+}
+
+
+h3 a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    color: yellow;
+    margin-left: -20px;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+
+.botoes {
+    height: 8rem;
+    margin: 4rem 0 0 1rem;
+    width: 10rem;
+}
+
+.botoes button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    display: block;
+    padding: 15px 30px;
+    margin: 0 auto;
+}
+
+#adicionar {
+    margin: 1rem auto 10px auto;
+}
+
+#adicionar:hover {
+    background-color: #1c2f8b;
+    color: white;
+}
+
+#remover:hover {
+    background-color: rgb(242, 109, 109);
+}
+
+
+/* ---------- - Corpo / Catalogo - ----------- */
+
+main {
+    border: 1px solid black;
+    width: 70%;
+    height: 34rem;
+    float: left;
+    margin-left: 90px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgb(125, 125, 1);
+}
+
+
+/* -------------------- Formulario cadaastro -------------------- */
+
+#container-add {
+    position: fixed; /* Fixa o formulário na tela */
+    top: 50%;        /* Coloca o formulário no meio da altura da tela */
+    left: 50%;       /* Coloca o formulário no meio da largura da tela */
+    transform: translate(-50%, -50%); /* Ajusta para centralizar exatamente */
+    width: 80%;      /* Define a largura do formulário (ajuste conforme necessário) */
+    max-width: 600px; /* Define a largura máxima (opcional) */
+    height: 30rem;
+    background-color: white; /* Cor de fundo para destacar o formulário */
+    padding: 20px;
+    border: 1px solid black; /* Borda do formulário */   /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    z-index: 10;     /* Garante que o formulário fique acima de outros elementos */
+}
+
+#container-add h1 {
+    background-color: green;
+    font-size: 30px;
+    padding: 10px 0 10px 15px;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 39.1rem;
 }
